@@ -40,7 +40,7 @@
 
   function talk () {
     synth.speak (utterance);
-    document.write(utterance);
+    document.write(result[0].transcript);
   }
 
   function stop () {
