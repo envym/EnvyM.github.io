@@ -13,7 +13,7 @@
     var result = event.results[event.resultIndex];
     if (result.isFinal) {
      // document.write('Вы сказали: ' + result[0].transcript);
-      document.getElementById("my").innerHTML = "hello" ;
+      document.getElementById("my").innerHTML = result[0].transcript;
     } else {
       console.log('Промежуточный результат: ', result[0].transcript);
     }
