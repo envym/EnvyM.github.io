@@ -11,12 +11,12 @@
   // Используем колбек для обработки результатов
   recognizer.onresult = function (event) {
     var result = event.results[event.resultIndex];
-    if (result.isFinal) {
-     // document.write('Вы сказали: ' + result[0].transcript);
+   document.getElementById("my").innerHTML = result[0].transcript;
+   /* if (result.isFinal) {
       document.getElementById("my").innerHTML = result[0].transcript;
     } else {
       console.log('Промежуточный результат: ', result[0].transcript);
-    }
+    }*/
   };
 
   function speech () {
@@ -27,9 +27,9 @@
   var synth = window.speechSynthesis;
   var utterance = new SpeechSynthesisUtterance('How about we say this now? This is quite a long sentence to say.');
 
-  function talk () {
+/*  function talk () {
     //synth.speak (utterance);
-  }
+  }*/
 
   function stop () {
     synth.pause();
