@@ -33,8 +33,9 @@
         var arr = names.split(' ');
 
         for (var i = 0; i < arr.length; i++) {
-          if (arr[i] == "Антон"){
+          if (arr[i] == "Антон" && arr[i+1] == "Антон"){
         alert( 'Вам сообщение ' + arr[i] );
+        arr[i+1] = null;
         }
 
         }
