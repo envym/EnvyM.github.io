@@ -9,6 +9,8 @@
 <body>
 
 <textarea id="textarea" rows=10 cols=80></textarea>
+<p id = "my">Тут будет текст</p>
+
   <button id="button" onclick="toggleStartStop()"></button>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -23,7 +25,7 @@
     recognition.onresult = function (event) {
       for (var i = event.resultIndex; i < event.results.length; ++i) {
         if (event.results[i].isFinal) {
-          textarea.value += event.results[i][0].transcript;
+          my.value += event.results[i][0].transcript;
         }
       }
     }
