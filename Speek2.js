@@ -14,7 +14,6 @@
    document.getElementById("my").innerHTML = result[0].transcript;
     if (result.isFinal) {
       document.getElementById('my').value += "\r\n";
-      recognizer.start();
     } else {
       console.log('Промежуточный результат: ', result[0].transcript);
     }
@@ -25,7 +24,7 @@
     recognizer.start();
   }
 
-  /*var synth = window.speechSynthesis;
+  var synth = window.speechSynthesis;
   var utterance = new SpeechSynthesisUtterance('How about we say this now? This is quite a long sentence to say.');
 
   function talk () {
@@ -34,5 +33,5 @@
 
   function stop () {
     synth.pause();
-  }*/
+  }
 
