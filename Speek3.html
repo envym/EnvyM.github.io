@@ -57,6 +57,12 @@
             textarea.value += arr[i] + " ";
             i++;
             }
+            else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "больше"){
+              changeStyleDiv();
+              i = i + 2;
+              alert( 'Сделать текст больше');
+            }
+
              else{
              textarea.value += arr[i] + " ";
             }
