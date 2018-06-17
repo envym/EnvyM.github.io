@@ -18,7 +18,7 @@
 
 
 
-      function changeStyleDiv(){
+      function changeStyleBig(){
              var SizeOftextGet = document.getElementById('textarea').style.fontSize
              var SizeOftextArr = SizeOftextGet.split('');
              var SizeOftextSrting;
@@ -32,6 +32,23 @@
               SizeOftextSrting = SizeOftextArr.join('');
               SizeOftextFinalInt = parseInt(SizeOftextSrting, 10);
               SizeOftextFinalInt = SizeOftextFinalInt+2;
+              document.getElementById('textarea').style.fontSize = SizeOftextFinalInt+'pt';     
+}
+
+      function changeStyleSmall(){
+             var SizeOftextGet = document.getElementById('textarea').style.fontSize
+             var SizeOftextArr = SizeOftextGet.split('');
+             var SizeOftextSrting;
+             var SizeOftextFinalInt;
+
+              for (var e = 0; e < SizeOftextArr.length; e++){
+                if(SizeOftextArr[e] == "p" || SizeOftextArr[e] == "t"){
+                  SizeOftextArr[e] = "";}
+              }
+
+              SizeOftextSrting = SizeOftextArr.join('');
+              SizeOftextFinalInt = parseInt(SizeOftextSrting, 10);
+              SizeOftextFinalInt = SizeOftextFinalInt-2;
               document.getElementById('textarea').style.fontSize = SizeOftextFinalInt+'pt';     
 }
 
@@ -58,9 +75,12 @@
             i++;
             }
             else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "больше"){
-              changeStyleDiv();
+              changeStyleBig();
               i = i + 2;
-              alert( 'Сделать текст больше');
+            }
+             else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "меньше"){
+              changeStyleSmall();
+              i = i + 2;
             }
 
              else{
