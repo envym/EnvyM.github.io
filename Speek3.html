@@ -8,12 +8,36 @@
 </head>
 <body>
 
-  <textarea id="textarea" rows=10 cols=80></textarea>
+  <textarea id="textarea" style = "width: 500px; height: 400px; font-size:12pt"></textarea>
   <button id="button" onclick="toggleStartStop()"></button>
+  <a href="#" onclick='changeStyleDiv()'>Изменить стили</a>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <script type="text/javascript">
+
+
+
+      function changeStyleDiv(){
+             var SizeOftextGet = document.getElementById('textarea').style.fontSize
+             var SizeOftextArr = SizeOftextGet.split('');
+             var SizeOftextSrting;
+             var SizeOftextFinalInt;
+
+              for (var e = 0; e < SizeOftextArr.length; e++){
+                if(SizeOftextArr[e] == "p" || SizeOftextArr[e] == "t"){
+                  SizeOftextArr[e] = "";}
+              }
+
+              SizeOftextSrting = SizeOftextArr.join('');
+              SizeOftextFinalInt = parseInt(SizeOftextSrting, 10);
+              SizeOftextFinalInt = SizeOftextFinalInt+2;
+              document.getElementById('text').style.fontSize = SizeOftextFinalInt+'pt';     
+}
+
+
+
+
     var recognizing;
     var recognition = new webkitSpeechRecognition();
     recognition.continuous = true;
@@ -22,24 +46,23 @@
     recognition.onresult = function (event) {
       for (var i = event.resultIndex; i < event.results.length; ++i) {
         if (event.results[i].isFinal) {
-          //textarea.value += event.results[i][0].transcript;
-          var names = event.results[i][0].transcript;
+          var words = event.results[i][0].transcript;
         }
 
-        //var names = 'Маша, Петя, Марина, Василий';
+        var arr = words.split(' ');
 
-        //var names = event.results[i][0].transcript;
+          for (var i = 0; i < arr.length; i++) {
+              if (arr[i] == "Антон" && arr[i+1] == "Антон"){
+            alert( 'Вам сообщение ' + arr[i] );
+            textarea.value += arr[i] + " ";
+            i++;
+            }
+             else{
+             textarea.value += arr[i] + " ";
+            }
+          }
 
-        var arr = names.split(' ');
 
-        for (var i = 0; i < arr.length; i++) {
-          if (arr[i] == "Антон" && arr[i+1] == "Антон"){
-        alert( 'Вам сообщение ' + arr[i] );
-        arr[i+1] = "";
-        }
-         textarea.value += arr[i] + " ";
-
-        }
 
       }
     }
@@ -53,11 +76,11 @@
       if (recognizing) {
         recognition.stop();
         reset();
-        textarea.value += ' ';
       } else {
         recognition.start();
         recognizing = true;
         button.innerHTML = "Click to Stop";
+        textarea.value += ' ';
       }
     }
   </script>
