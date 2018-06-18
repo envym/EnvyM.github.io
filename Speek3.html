@@ -91,8 +91,11 @@
               arr.splice(i, i+2);
             }
              else{
-             textarea.value += arr[i] + " ";
+             //etxtarea.value += arr[i] + " ";
             } 
+
+            var arrString = arr.join(' ');
+            etxtarea.value += arrString + " ";
 
           }
 
