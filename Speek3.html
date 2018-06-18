@@ -60,6 +60,7 @@
     recognition.continuous = true;
     reset();
     recognition.onend = reset;
+
     recognition.onresult = function (event) {
       for (var i = event.resultIndex; i < event.results.length; ++i) {
         if (event.results[i].isFinal) {
@@ -103,7 +104,7 @@
         recognition.start();
         recognizing = true;
         button.innerHTML = "Click to Stop";
-        textarea.value += ' ';
+        //textarea.value += ' ';
       }
     }
   </script>
