@@ -46,6 +46,7 @@
       for (var i = event.resultIndex; i < event.results.length; ++i) {
         if (event.results[i].isFinal) {
           spaseMarker = 1;
+          alert(spaseMarker);
           var words = event.results[i][0].transcript;
         }
 
@@ -116,7 +117,7 @@
             null;
             } 
           }
-            alert(arr);
+            
            var arrString = arr.join(' ');
            alert(arrString);
            textarea.value += arrString;
@@ -139,6 +140,7 @@
         recognizing = true;
         button.innerHTML = "Click to Stop";
         spaseMarker = 0;
+        alert(spaseMarker);
         //textarea.value += ' ';
       }
 
