@@ -76,6 +76,42 @@
               arr.splice(i, i+1);
               arr.splice(i, i+2);
             }
+              else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "оранжевым"){
+               document.getElementById('textarea').style.color = "orange";
+              arr.splice(i, i);
+              arr.splice(i, i+1);
+              arr.splice(i, i+2);
+            }
+              else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "желтым"){
+               document.getElementById('textarea').style.color = "yellow";
+              arr.splice(i, i);
+              arr.splice(i, i+1);
+              arr.splice(i, i+2);
+            }
+            else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "зелёным"){
+               document.getElementById('textarea').style.color = "green";
+              arr.splice(i, i);
+              arr.splice(i, i+1);
+              arr.splice(i, i+2);
+            }
+            else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "голубым"){
+               document.getElementById('textarea').style.color = "blue";
+              arr.splice(i, i);
+              arr.splice(i, i+1);
+              arr.splice(i, i+2);
+            }
+                else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "синим"){
+               document.getElementById('textarea').style.color = "blue";
+              arr.splice(i, i);
+              arr.splice(i, i+1);
+              arr.splice(i, i+2);
+            }
+              else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "фиолетовым"){
+               document.getElementById('textarea').style.color = "purple";
+              arr.splice(i, i);
+              arr.splice(i, i+1);
+              arr.splice(i, i+2);
+            }
 
              else{
              null;
