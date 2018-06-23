@@ -72,14 +72,15 @@
             }
              else{
              //textarea.value += arr[i] + " ";
-              alert(arr);
-           var arrString = arr.join(' ');
-           alert(arrString);
-           textarea.value += arrString;
+             null;
 
             } 
           }
          //---------------
+            alert(arr);
+           var arrString = arr.join(' ');
+           alert(arrString);
+           textarea.value += arrString;
       }
     }
 
