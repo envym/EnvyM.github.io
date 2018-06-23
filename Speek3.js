@@ -45,6 +45,7 @@
     recognition.onresult = function (event) {
       for (var i = event.resultIndex; i < event.results.length; ++i) {
         if (event.results[i].isFinal) {
+          spaseMarker = 1;
           var words = event.results[i][0].transcript;
         }
 
@@ -54,76 +55,65 @@
               if (arr[i] == "Антон" && arr[i+1] == "Антон"){
             alert( 'Вам сообщение ' + arr[i] );
             textarea.value += arr[i] + " ";
-            spaseMarker = 0;
             arr.splice(i, i+1);
             }
             else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "больше"){
               changeStyleBig();
-              spaseMarker = 0;
               arr.splice(i, i);
               arr.splice(i, i+1);
               arr.splice(i, i+2);
             }
              else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "меньше"){
               changeStyleSmall();
-              spaseMarker = 0;
               arr.splice(i, i);
               arr.splice(i, i+1);
               arr.splice(i, i+2);
             }
              else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "красным"){
                document.getElementById('textarea').style.color = "red";
-               spaseMarker = 0;
               arr.splice(i, i);
               arr.splice(i, i+1);
               arr.splice(i, i+2);
             }
               else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "оранжевым"){
                document.getElementById('textarea').style.color = "orange";
-               spaseMarker = 0;
               arr.splice(i, i);
               arr.splice(i, i+1);
               arr.splice(i, i+2);
             }
               else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "желтым"){
                document.getElementById('textarea').style.color = "yellow";
-               spaseMarker = 0;
               arr.splice(i, i);
               arr.splice(i, i+1);
               arr.splice(i, i+2);
             }
             else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "зелёным"){
                document.getElementById('textarea').style.color = "green";
-               spaseMarker = 0;
               arr.splice(i, i);
               arr.splice(i, i+1);
               arr.splice(i, i+2);
             }
             else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "голубым"){
                document.getElementById('textarea').style.color = "blue";
-               spaseMarker = 0;
               arr.splice(i, i);
               arr.splice(i, i+1);
               arr.splice(i, i+2);
             }
                 else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "синим"){
                document.getElementById('textarea').style.color = "blue";
-               spaseMarker = 0;
               arr.splice(i, i);
               arr.splice(i, i+1);
               arr.splice(i, i+2);
             }
               else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "фиолетовым"){
                document.getElementById('textarea').style.color = "purple";
-               spaseMarker = 0;
               arr.splice(i, i);
               arr.splice(i, i+1);
               arr.splice(i, i+2);
             }
 
              else{
-             null;
-             spaseMarker = 1;
+            null;
             } 
           }
             alert(arr);
@@ -144,6 +134,7 @@
       if (recognizing) {
         recognition.stop();
         reset();
+        spaseMarker = 0;
       } else {
         recognition.start();
         recognizing = true;
@@ -151,7 +142,7 @@
         //textarea.value += ' ';
       }
 
-      if (event.results[i].isFinal && spaseMarker==1){
+      if (spaseMarker==1){
         textarea.value += ' ';
       }
     }
