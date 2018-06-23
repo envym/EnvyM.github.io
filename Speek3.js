@@ -134,11 +134,11 @@
       if (recognizing) {
         recognition.stop();
         reset();
-        spaseMarker = 0;
       } else {
         recognition.start();
         recognizing = true;
         button.innerHTML = "Click to Stop";
+        spaseMarker = 0;
         //textarea.value += ' ';
       }
 
