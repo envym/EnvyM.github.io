@@ -77,7 +77,7 @@
           alert(arr);
            var arrString = arr.join(' ');
            alert(arrString);
-           textarea.value += arrString + " ";
+           textarea.value += arrString;
 
       }
     }
