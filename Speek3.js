@@ -70,13 +70,17 @@
               arr.splice(i, i+1);
               arr.splice(i, i+2);
             }
-             else{
-             //textarea.value += arr[i] + " ";
-             null;
+             else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "красным"){
+               document.getElementById('textarea').style.color = "red";
+              arr.splice(i, i);
+              arr.splice(i, i+1);
+              arr.splice(i, i+2);
+            }
 
+             else{
+             null;
             } 
           }
-         //---------------
             alert(arr);
            var arrString = arr.join(' ');
            alert(arrString);
