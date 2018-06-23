@@ -72,13 +72,14 @@
             }
              else{
              //textarea.value += arr[i] + " ";
-            } 
-          }
-          alert(arr);
+              alert(arr);
            var arrString = arr.join(' ');
            alert(arrString);
            textarea.value += arrString;
 
+            } 
+          }
+         //---------------
       }
     }
 
@@ -95,6 +96,6 @@
         recognition.start();
         recognizing = true;
         button.innerHTML = "Click to Stop";
-        //textarea.value += ' ';
+        textarea.value += ' ';
       }
     }
