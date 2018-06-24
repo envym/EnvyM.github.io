@@ -45,7 +45,7 @@
     recognition.onresult = function (event) {
       for (var i = event.resultIndex; i < event.results.length; ++i) {
         if (event.results[i].isFinal) {
-          spaseMarker = 1;
+          spaseMarker = 1; //маркер необходимый для правмильного установления пробела
          // alert(spaseMarker);
           var words = event.results[i][0].transcript;
         }
@@ -53,12 +53,7 @@
         var arr = words.split(' ');
 
           for (var i = 0; i < arr.length; i++) {
-              if (arr[i] == "Антон" && arr[i+1] == "Антон"){
-            alert( 'Вам сообщение ' + arr[i] );
-            textarea.value += arr[i] + " ";
-            arr.splice(i, i+1);
-            }
-            else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "больше"){
+             if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "больше"){
               changeStyleBig();
               arr.splice(i, i);
               arr.splice(i, i+1);
@@ -126,7 +121,11 @@
 
     function reset() {
       recognizing = false;
+      //-------------------------------------------------------------
       button.innerHTML = "Click to Speak";
+      //document.getElementById('image').src="http://abali.ru/wp-content/uploads/2013/01/ognennoe_serdce.jpg";
+
+
     }
 
      
@@ -138,9 +137,12 @@
       } else {
         recognition.start();
         recognizing = true;
+        //-------------------------------------------------------------
         button.innerHTML = "Click to Stop";
+        // document.getElementById('image').src="https://st2.depositphotos.com/5686448/10655/i/450/depositphotos_106554894-stock-photo-deer-skull-animal-skull-with.jpg";
+
         spaseMarker = 0;
-        //alert(spaseMarker);
+        
       }
 
       if (spaseMarker==1){
