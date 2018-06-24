@@ -106,6 +106,12 @@
               arr.splice(i, i);
               arr.splice(i, i+1);
               arr.splice(i, i+2);
+            }    
+             else if (arr[i] == "сделать" && arr[i+1] == "текст" && arr[i+2] == "чёрным"){
+               document.getElementById('textarea').style.color = "black";
+              arr.splice(i, i);
+              arr.splice(i, i+1);
+              arr.splice(i, i+2);
             }
 
              else{
