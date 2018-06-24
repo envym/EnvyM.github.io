@@ -122,8 +122,8 @@
     function reset() {
       recognizing = false;
       //-------------------------------------------------------------
-      button.innerHTML = "Click to Speak";
-      //document.getElementById('image').src="http://abali.ru/wp-content/uploads/2013/01/ognennoe_serdce.jpg";
+      //button.innerHTML = "Click to Speak";
+      document.getElementById('image').src="http://abali.ru/wp-content/uploads/2013/01/ognennoe_serdce.jpg";
 
 
     }
@@ -138,9 +138,8 @@
         recognition.start();
         recognizing = true;
         //-------------------------------------------------------------
-        button.innerHTML = "Click to Stop";
-        // document.getElementById('image').src="https://st2.depositphotos.com/5686448/10655/i/450/depositphotos_106554894-stock-photo-deer-skull-animal-skull-with.jpg";
-
+        //button.innerHTML = "Click to Stop";
+        document.getElementById('image').src="https://st2.depositphotos.com/5686448/10655/i/450/depositphotos_106554894-stock-photo-deer-skull-animal-skull-with.jpg";
         spaseMarker = 0;
         
       }
