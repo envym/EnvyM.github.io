@@ -4,37 +4,49 @@ text-align: 400px;
 }
 
 
-.text	{
-	text-align: 300px;
-	font-weight: normal;
-	font-family: comic sans NC;
-	text-align: right;
-	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpK_SzDBSb4eNQUVepiiEwbeXxCBQykTa0iiEZaH1ejvhSWUjIWg') ;
+.text{
+	position:relative; 
+    text-align: center; /* Выравниваем по центру */
+    margin-top: 100px; 
+    z-index: 1;
 
 }
 
-#my {
-background-color: red;
-margin: none;   
-	padding: 0%;  
-	width: 750px;
-	height: 525px;
-	margin-right: 0%;
-	border-radius: 0px;
-	float: left;
-	margin: 0% 5% 5% 0%; 
+#textarea{
+	width: 490px; 
+	height: 368px; 
+	font-size:12pt;
+}
+
+
+#frame{
+	position:relative;
+	text-align: center;
+	top: -452px;
+ 	left: 0px;
+ 	z-index: 0;
 
 }
+
 
 #ART{
+    
 	background-size: contain;
 	object-fit: contain;
 	text-align: left; 
 	padding:  0% 0% 0% 0%;  
-	float: left;
+	float: center;
 	margin: 0% 5% 0% 0%; 
-    width: 100px;
-    height: 100px;
-  
+    width: 50px;
+    height: 50px;
+}
+
+#buttonBlock{
+	position:relative; 
+    text-align: center; /* Выравниваем по центру */
+    margin-top: 50px; 
+    z-index: 1;
+    top: -480px;
+ 	left: 0px;
 
 }
