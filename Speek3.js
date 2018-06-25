@@ -12,7 +12,6 @@
               SizeOftextSrting = SizeOftextArr.join('');
               SizeOftextFinalInt = parseInt(SizeOftextSrting, 10);
               SizeOftextFinalInt = SizeOftextFinalInt+2;
-              alert (SizeOftextFinalInt);
               document.getElementById('textarea').style.fontSize = SizeOftextFinalInt+'pt';     
 }
 
