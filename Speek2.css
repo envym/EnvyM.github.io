@@ -15,7 +15,7 @@ text-align: 400px;
 #textarea{
 	width: 511px; 
 	height: 381px; 
-	font-size:12pt;
+	
 }
 
 
@@ -43,10 +43,10 @@ text-align: 400px;
 
 #buttonBlock{
 	position:relative; 
-    text-align: center; /* Выравниваем по центру */
+    text-align: right; /* Выравниваем по центру */
     margin-top: 50px; 
     z-index: 1;
-    top: -480px;
- 	left: 0px;
+    top: -800px;
+ 	left: -300px;
 
 }
