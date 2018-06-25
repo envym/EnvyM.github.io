@@ -13,7 +13,8 @@
     var result = event.results[event.resultIndex];
    document.getElementById("my").innerHTML = result[0].transcript;
     if (result.isFinal) {
-      document.getElementById('my').value += "\r\n";
+      //document.getElementById('my').value += "\r\n";
+      
     } else {
       console.log('Промежуточный результат: ', result[0].transcript);
     }
