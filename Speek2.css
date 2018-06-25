@@ -13,8 +13,8 @@ text-align: 400px;
 }
 
 #textarea{
-	width: 490px; 
-	height: 368px; 
+	width: 511px; 
+	height: 381px; 
 	font-size:12pt;
 }
 
@@ -22,7 +22,7 @@ text-align: 400px;
 #frame{
 	position:relative;
 	text-align: center;
-	top: -452px;
+	top: -468px;
  	left: 0px;
  	z-index: 0;
 
