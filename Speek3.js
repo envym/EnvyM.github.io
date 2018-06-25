@@ -49,6 +49,7 @@
          // alert(spaseMarker);
           var words = event.results[i][0].transcript;
         }
+        }//----------------------------------------
 
         var arr = words.split(' ');
 
@@ -123,7 +124,7 @@
           // alert(arrString);
            textarea.value += arrString;
       }
-    }
+    //}//----------------------------------------
 
     function reset() {
       recognizing = false;
