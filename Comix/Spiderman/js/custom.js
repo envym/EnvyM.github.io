@@ -70,7 +70,7 @@ $(function(){
 
 
 function initMap() {
-    var coordinates = {lat: -37.806006, lng: 144.961291}, // Координаты центра карты 
+    var coordinates = {lat: 50.507861, lng: 30.487582}, // Координаты центра карты 
         markerImg = 'img/marker.png', //  Иконка для маркера  
    
     // создаем карту и настраеваем 
