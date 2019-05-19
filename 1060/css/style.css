@@ -1510,6 +1510,7 @@ margin-left: 1000px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	position: relative;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
@@ -1517,6 +1518,7 @@ margin-left: 1000px;
 	        margin-left: 1000px;
 	        height: 100px;
 	        width: 200px;
+	        z-index: 11111;
 
 }
 
@@ -1568,6 +1570,7 @@ margin-left: 1000px;
 .reviews_slider{
 		margin-top: -60px;
 		width: 100%;
+
 
 }
 
