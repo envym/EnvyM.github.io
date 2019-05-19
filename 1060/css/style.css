@@ -2432,7 +2432,7 @@ position: relative;
 .pakedge-wrap-text  {
 	line-height: 28px;
 	color: #e74c3c;
-	/*font-size: 20px;*/
+	font-size: 20px;
 	font-weight: 300;
 	text-align: center;
 	
@@ -2450,7 +2450,7 @@ position: relative;
 	font-family: 'Amatic SC', sans-serif;
 	font-style: normal;
 	font-weight: bold;
-	/*font-size: 36px;*/
+	font-size: 36px;
 	line-height: 138.71%;
 	letter-spacing: 0.03em;
 
@@ -2466,7 +2466,7 @@ position: relative;
 .pakedge-wrap-text p {
 	width: 100%;
 	height: 71px;
-	/*font-size: 12px;*/
+	font-size: 12px;
 	line-height: 23px;
 	letter-spacing: 0.03em;
 	color: #000000;
@@ -2583,7 +2583,7 @@ position: relative;
 
 .list_by_main_img p{
 	
-	/*font-size: 24px;*/
+	font-size: 24px;
 	
 }
 
@@ -2591,7 +2591,7 @@ position: relative;
 .list_by_main_block-R {
 	margin-top: 150px;
 	position: absolute;
-	margin-left: 65%;
+	margin-left: 60%;
 	 z-index: 100;
 	
 }
@@ -2599,14 +2599,14 @@ position: relative;
 .list_by_main_block-L {
 	margin-top: 150px;
 	position: absolute;
-	margin-left: 1%;
+	margin-left: -10px;
 	 z-index: 100;
 
 }
 
 
 .pakedge-wrap-text1 h6{
-	/*font-size: 36px;*/
+	font-size: 36px;
 }
 
 .team-list1{
@@ -3062,6 +3062,99 @@ display: none;
 }
 
 
+
+.logo a{
+	font-size:  36px;
+}
+
+.number a{
+	font-size:  14px;
+}
+
+
+.about-wrap-content__text h6{
+font-size: 36px;
+}
+
+.about-wrap-character__head h6{
+	font-size: 36px;
+}
+.about-wrap-character__text h6{
+   font-size:24px;
+}
+
+.about-wrap-character__text p{
+    font-size:12px;
+}
+ 
+.pakedge-wrap-text h6{
+font-size: 36px;
+}
+
+.pakedge-wrap-text p{
+	font-size:12px;
+}
+
+.team-list__img h6{
+font-size: 24px;
+}
+
+
+.team-list__img ul{
+	font-size: 14px;
+}
+
+.pakedge-wrap-text{
+	font-size: 36px;
+}
+
+.list_by-character__text{
+	font-size: 24px;
+}
+
+
+.list_by_slid p {
+   font-size: 24px;
+
+}
+.pakedge-wrap-text1 h6{
+	 font-size: 36px;
+
+}
+
+.team-list__item h6{
+font-size: 24px;
+}
+
+.gallery_title h6{
+  font-size: 36px;
+
+}
+
+
+.gallery_title p{
+font-size: 12px;
+
+}
+.reviews_text p{
+font-size: 12px;
+}
+
+.reviews_name{
+font-size: 12px;
+}
+
+.reviews_job{
+font-size: 12px;	
+}
+.footer_title p{
+	  font-size: 36px;
+}
+
+
+.footer_contact_title p{
+	font-size: 24px;
+}
 
 
 }
