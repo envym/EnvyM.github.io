@@ -2474,6 +2474,7 @@ position: relative;
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 70px;
 
 
 }
@@ -2715,23 +2716,33 @@ margin-bottom: 80px;
 	width: 100%;
 
 }
+.reviews_slider{
+	height: auto;
 
+}
 .reviews_slider_box{
 	
 	margin-right: 40px;
+	height: 200px;
+	width: 100%;
 	
 }
 
 .reviews_text{
-	width: 100%;
-	
+	width:auto;
+	height: auto;
+	margin-right: -30px;
 
 }
-
+.reviews_text p{
+	width: auto;
+	height: auto;
+}
 
 .slick-dots{
 	display: none;
 }
+
 
 .gallery-list-roll{
 display: none;
@@ -3044,6 +3055,12 @@ margin-top: 200px;
 position: absolute;
 
 }
+
+.stars{
+display: none;
+
+}
+
 
 
 
