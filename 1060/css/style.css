@@ -3156,6 +3156,20 @@ font-size: 12px;
 	font-size: 24px;
 }
 
+.list_by_text span{
+	font-size: 12px;
+}
+.list_by_text li{
+	font-size: 12px;
+}
+.list_by_text{
+	padding-left: -100px;
+
+}
+
+.list_by {
+	width: 280px;
+}
 
 }
 
