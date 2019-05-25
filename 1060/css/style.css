@@ -495,7 +495,7 @@ width: 800px;
 	position: absolute;
 	width: 82px;
 	height: 16px;
-	margin-top: 200px;
+
 	margin-left: 470px;
 	z-index: 9999;
 
@@ -519,7 +519,6 @@ width: 800px;
 	position: absolute;
 	width: 82px;
 	height: 16px;
-	margin-top: 200px;
 	margin-left: 720px;
 	z-index: 9999;
 
@@ -533,6 +532,13 @@ width: 800px;
 	width: 82px; 
 	height: 16px;
 
+}
+
+
+.character_arrows{
+	width: 100%;
+	position: absolute;
+	margin-top: 200px;
 }
 
 /*-----------------GALLERY---------------------*/
@@ -2195,6 +2201,7 @@ position: absolute;
 	
 	background:  #DAEEED;
 	background-size: cover;
+
 }
 
 
@@ -2377,18 +2384,40 @@ display: none;
 	}
 
 
-.character-list-roll-imgL{
+
+
+
+
+
+.character_arrows{
 	margin-top: 150px;
-	margin-left: 1%;
+	display: flex;
 
 }
+
+
+
+.character-list-roll-imgL{
+	margin-left: 5px;
+	position: relative;
+
+}
+
 
 
 .character-list-roll-imgR{
-	margin-top: 150px;
-	margin-left: 80%;
+	position: relative;
+	margin-left: auto;
+	margin-right: 5px;
+
 
 }
+
+.character-list-roll-imgR:hover{
+	position: relative;
+
+}
+
 
 
 
@@ -2595,16 +2624,28 @@ position: relative;
 .list_by_main_block-R {
 	margin-top: 150px;
 	position: absolute;
-	margin-left: 60%;
 	 z-index: 100;
+		 width: 100%;
+		 margin-left: -40px;
+		 display: flex;
+		 z-index: 100;
 	
 }
+
+.show-list-roll-imgR-slide{
+	margin-left: auto;
+	margin-right: 5px;
+
+}
+
+
 
 .list_by_main_block-L {
 	margin-top: 150px;
 	position: absolute;
-	margin-left: -10px;
-	 z-index: 100;
+	margin-left: -35px;
+	 z-index: 101;
+
 
 }
 
@@ -2888,10 +2929,18 @@ z-index: 1111;
 
 .mask{
 position: absolute;
-margin-left: 85%;
+  margin-left: 0;
 margin-top: 400px;
+margin-left: -40px;
+width: 100%;
+display: flex;
 }
 
+.mask img{
+	  margin-left: auto;
+	  margin-right: 0px;
+
+}
 
 .Line1{
 display: none;
@@ -2914,9 +2963,23 @@ display: none;
 display: flex;
 position: absolute;
 z-index: 11111;
-margin-top: 1505px;
-margin-left: 85%;
 
+
+}
+
+.gift1m{
+	display: flex;
+	margin-left: -40px;
+margin-top: 200px;
+position: absolute;
+width: 100%;
+
+
+}
+
+.gift1m img{
+margin-left: auto;
+	  margin-right: 0px;
 }
 
 
@@ -2941,10 +3004,17 @@ z-index: 11111;
 }
 
 .Line4{
-margin-left: 90%;
+margin-left: -40px;
 margin-top: 1801px;
 position: absolute;
 z-index: 11111;
+width: 100%;
+display: flex;
+}
+
+.Line4 img{
+	margin-left: auto;
+	margin-right: 0px;
 }
 
 .note{
@@ -3004,10 +3074,18 @@ width: 100%;
 
 
 .Line6{
-margin-left: 85%;
+margin-left: -40px;
 margin-top: 60px;
 position: absolute;
 z-index: 11111;
+width: 100%;
+display: flex;
+}
+
+.Line6 img{
+	margin-left: auto;
+	margin-right: 0px;
+
 }
 
 .Ellipse4{
@@ -3018,11 +3096,18 @@ position: absolute;
 }
 
 .crown{
-margin-left: 85%;
+margin-left: -40px;
 margin-top: 1350px;
 position: absolute;
 z-index: 1111;
+display: flex;
+width: 100%;
 
+}
+
+.crown img{
+	margin-left: auto;
+	margin-right: 0px;
 }
 
 
@@ -3052,13 +3137,8 @@ display: none;
 
 }
 
-.gift1m{
-	display: flex;
-	margin-left: 80%;
-margin-top: 200px;
-position: absolute;
 
-}
+
 
 .stars{
 display: none;
