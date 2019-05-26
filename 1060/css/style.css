@@ -705,6 +705,7 @@ width: 800px;
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 50px;
+	margin-top: 10px;
 
 
 	letter-spacing: 0.03em;
@@ -765,6 +766,7 @@ color: silver;
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 50px;
+	margin-top: 10px;
 
 	letter-spacing: 0.03em;
 	color: #282828;
@@ -816,6 +818,7 @@ color: silver;
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 50px;
+	margin-top: 10px;
 
 	letter-spacing: 0.03em;
 	color: #282828;
@@ -848,24 +851,13 @@ color: silver;
 }
 
 .team-list__img {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-flex: 0;
-	    -ms-flex: none;
-	        flex: none;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+
 	font-size: 62px;
 
-	position: relative;
+	position: absolute;
 	margin: 0 auto ;
 	margin-top: -35px;
-	margin-right: -55px;
+	margin-left: 240px;
 	color: #fff;
 }
 
@@ -1732,6 +1724,7 @@ margin-left: 1000px;
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 30px;
+	position: relative;
 
 
 }
@@ -1910,7 +1903,10 @@ padding-left: 45px;
 	margin-left: 745px;
 	margin-top: -500px;
 	position: absolute;
+
 }
+
+
 
 
 
@@ -2053,6 +2049,8 @@ width: 100%;
 .qq img{
 	margin-right: auto;
 	margin-left: auto;
+	width: 183px;
+	height: 135px;
 }
 
 
@@ -2557,6 +2555,32 @@ position: relative;
 			box-shadow: 0 0 10px #666;
 }
 
+
+.team-list__item1 h6{
+	
+	margin-top: 0px;
+}
+
+.team-list__item2 h6{
+	
+	margin-top: 0px;
+}
+
+.team-list__item3 h6{
+	
+	margin-top: 0px;
+}
+
+.team-list__img {
+
+	font-size: 62px;
+
+	position: relative;
+	margin: 0 auto ;
+	margin-top: -35px;
+	margin-right: -55px;
+	color: #fff;
+}
 
 
 
