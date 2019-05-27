@@ -50,7 +50,7 @@ infinite: true,
 
   responsive: [
     {
-      breakpoint: 767,
+      breakpoint: 1300,
       settings: {
         arrows: false,
         centerMode: false,
@@ -101,21 +101,21 @@ infinite: true,
       }
     },
     {
-      breakpoint: 1400,
+      breakpoint: 1300,
       settings: {
         arrows: false,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 2
+        slidesToShow: 3
       }
     },
     {
       breakpoint: 1000,
       settings: {
         arrows: false,
-        centerMode: true,
+        centerMode: false,
         centerPadding: '40px',
-        slidesToShow: 1
+        slidesToShow: 2
       }
     },
      {
@@ -156,6 +156,26 @@ infinite: true,
         slidesToShow: 3,
         swipe: false,
         vertical:true
+      }
+    },
+
+    {
+      breakpoint: 1300,
+      settings: {
+        arrows: false,
+        centerMode: false,
+        centerPadding: '100px',
+        slidesToShow: 3
+      }
+    },
+
+    {
+      breakpoint: 1100,
+      settings: {
+        arrows: false,
+        centerMode: false,
+        centerPadding: '100px',
+        slidesToShow: 2
       }
     }
     
