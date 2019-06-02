@@ -2377,9 +2377,6 @@ width: auto;
 .list_by_text_sect5{
 	width: 100%;
 }
-.list_by_text_sect5_text{
-	width: 80%;
-}
 
 
 .sect5_block_bg{
@@ -2938,6 +2935,39 @@ display: -webkit-box;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 867px){
 
 
@@ -3055,6 +3085,7 @@ display: -webkit-box;
 
 .list_by{
 	margin-bottom: 40px;
+	margin-left: 10px;
 }
 
 .list_by_text span{
@@ -3245,6 +3276,7 @@ font-size: 25px;
 
 .list_by_text_sect4_R_block{
 	width: 100%;
+
 }
 
 
@@ -3262,6 +3294,7 @@ font-size: 25px;
 }
 .list_by_text_sect4_R_text{
 font-size: 20px;
+
 
 }
 
@@ -3285,7 +3318,8 @@ font-size: 20px;
 
 	margin-left: 0px;
 	width: 100%;
-	padding-right: 100px;
+	padding-right: 0px;
+	padding-left: 10px;
 
 
 }
@@ -3293,7 +3327,19 @@ font-size: 20px;
 .list_by_text_sect4_L{
 		margin-left: 0px;
 		width: 100%;
-	padding-right: 100px;
+	padding-right: 0px;
+		padding-left: 10px;
+
+}
+
+
+
+.list_by_text_sect4_bot{
+
+	padding-left: 10px;
+
+
+	
 
 }
 
@@ -3302,6 +3348,7 @@ font-size: 20px;
 	margin-top: auto;
 	height: auto;
 	margin-bottom: 20px;
+
 }
 
 
@@ -3406,9 +3453,10 @@ font-size: 20px;
 
 .list_by_text_sect5{
 	width: 100%;
+	padding-left: 10px;
 }
 .list_by_text_sect5_text{
-	width: 80%;
+	
 }
 
 
@@ -3491,6 +3539,7 @@ width: auto;
 
 .sect7_top{
 	height: auto;
+	font-size: 30px;
 }
 
 .sect7_main_first{
@@ -3776,6 +3825,7 @@ width: auto;
 }
 .sect9_L1{
 	width: 100%;
+	padding-left: 10px;
 }
 
 
@@ -3797,6 +3847,9 @@ height: auto;
 
 }
 
+.sect10_top_line{
+width: 60%;
+}
 
 .sect10_top{
 	font-size: 40px;
