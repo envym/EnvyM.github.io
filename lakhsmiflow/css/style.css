@@ -2562,8 +2562,13 @@ width: auto;
 	font-size: 30px;
 	text-transform: uppercase;
 	color: #000;
+
 	
 } 
+
+.sect5_block{
+margin-bottom: 200px;
+}
 
 
 .sect5_main_L h6{
@@ -2651,9 +2656,11 @@ width: auto;
 }
 
 
-
+.sect7_top{
+	margin-top: 155px;
+}
 .sect7_main_block{
-	margin-top: 55px;
+	margin-top: 25px;
 }
 
 .sect7_main_first{
