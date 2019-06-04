@@ -308,6 +308,33 @@ margin-left: auto;
 
 
 
+
+.video_bock {
+   position: relative;
+   padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+
+}
+
+	.video_bock iframe, 
+.video_bock object, 
+.video_bock embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+
 .sect2{
 
 	width: 100%;
