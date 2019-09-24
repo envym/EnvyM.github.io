@@ -1939,6 +1939,76 @@ header {
 	.hr {
 		margin: 45px 0;
 	}
+
+	h1 .h1_spiderman{
+		font-size: 20px;
+		
+	}
+
+	h1 .lg_spiderman{
+		font-size: 30px;
+		
+	}
+
+	h1 .sm_spiderman{
+		font-size: 20px;
+		
+	}
+
+
+	h1 .h1_batman{
+		font-size: 20px;
+		
+	}
+
+	h1 .lg_batman{
+		font-size: 30px;
+		
+	}
+
+	h1 .sm_batman{
+		font-size: 20px;
+		
+	}
+
+	h1 .h1_ironman{
+		font-size: 20px;
+		
+	}
+
+	h1 .lg_ironman{
+		font-size: 30px;
+		
+	}
+
+	h1 .sm_ironman{
+		font-size: 20px;
+	}
+
+
+
+
+	.btn_spiderman{
+		font-size: 11px;
+		padding-top: 14px;
+		
+	}
+
+
+	.btn_batman{
+		font-size: 11px;
+		padding-top: 14px;
+		
+	}
+	.btn_ironman{
+		font-size: 11px;
+		padding-top: 14px;
+		
+	}
+
+
+
+
 	.heading {
 		display: block;
 		margin-bottom: 50px;
