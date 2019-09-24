@@ -2139,9 +2139,9 @@ header {
 		max-width: 250px;
 		min-width: 180px;
 		text-align: center;
-		border: 2px solid;
-		border-radius: 6px;
-		font-size: 46px;
+		border: none;
+		/*border-radius: 6px;*/
+		font-size: 20px;
 	}
 	.nav-tab-list .slick-arrow {
 		position: absolute;
