@@ -1,0 +1,45 @@
+
+.modal-content{
+	width: 683px;
+	height: 420px;
+	background: url('../img/parisMassage.jpg') center center;
+	position: absolute;
+	left: -90px;
+
+	
+}
+
+.modal-header{
+	border-color: transparent;
+	color: white;
+
+}
+
+.modal-title{
+	font-size: 40px;
+}
+
+
+.modal-body img {
+	width: 20%;
+	height: 20%;
+	border-color: transparent;
+}
+
+.modal-footer {
+
+	      
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	        border-color: transparent;
+
+}
+
+.allcall{
+position: absolute;
+}
