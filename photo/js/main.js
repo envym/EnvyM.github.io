@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
 
-    //mobile menu toggling
+
     $("#menu_icon").click(function(){
         $("header nav ul").toggleClass("show_menu");
         $("#menu_icon").toggleClass("close_menu");
@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     
 
-    //Contact Page Map Centering
+
     var hw = $('header').width() + 50;
     var mw = $('#map').width();
     var wh = $(window).height();
@@ -32,7 +32,7 @@ $(document).ready(function(){
 
 
 
-    //Tooltip
+
     $("a").mouseover(function(){
 
         var attr_title = $(this).attr("data-title");
@@ -49,7 +49,6 @@ $(document).ready(function(){
         var a_width = $(this).width();
         var a_hegiht = $(this).height() + 3 + 4;
 
-        //if the tooltip width is smaller than the a/link/parent width
         if(tipwidth < a_width){
             tipwidth = a_width;
             $('.tooltip').outerWidth(tipwidth);
