@@ -194,11 +194,8 @@ body{
 	
 }
 
-
-
-@media(max-width: 00px){
-
-
-
-
+.gallery_inner img{
+	width: 250px;
+	height: 250px;
 }
+
