@@ -146,6 +146,11 @@ body{
 	font-weight: 700;
 }
 
+.project_item{
+	margin-bottom: 110px;
+	padding: 0;
+}
+
 .gallery_title{
 	text-transform: uppercase;
 	padding-top: 100px;
