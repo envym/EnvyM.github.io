@@ -219,6 +219,7 @@ function changeErroDisplay(){
 		document.getElementById("country_open_icon").style.display = 'none';
 		document.getElementById("country_close_icon").style.display = 'flex';
 		document.getElementById('Country').removeAttribute("onclick");
+		document.getElementById('trigger_form_field_Country').style.overflow = 'visible';
 
 	}
 
