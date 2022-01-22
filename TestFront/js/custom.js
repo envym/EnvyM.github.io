@@ -375,11 +375,11 @@ function changeErroDisplay(){
 				document.getElementById("placeholder_move_secondName").style.color = '#67D9B7';
 			}
 		})
-		$("#Country").on({
+		$("#trigger_form_field_Country").on({
 			mouseenter: function() {
 				$("#placeholder_move_Country").animate({ marginTop: "-21px"},{duration:300, queue: false});
 				$("#placeholder_move_Country").animate({ fontSize: "11px"},{duration:300, queue: false});
-				$(this).animate({ marginTop: "8px"},{duration:300, queue: false});
+				$("#Country").animate({ marginTop: "8px"},{duration:300, queue: false});
 				document.getElementById("placeholder_move_Country").style.color = '#67D9B7';
 			}
 		})
