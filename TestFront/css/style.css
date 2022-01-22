@@ -232,8 +232,7 @@ input {
 /*_______________________ Country selllect style________________________ */
 
 select{
-	-moz-appearance: none;
-	-webkit-appearance: none;
+
 	border: none;
 	outline: none;
 	padding: 5px;
@@ -614,10 +613,7 @@ input:-webkit-autofill:focus
 input:-webkit-autofill, 
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
+textarea:-webkit-autofill:focus{
 	border: 0;
 	-webkit-text-fill-color: #E0E0E0;
 	-webkit-box-shadow: 0 0 0px 1000px transparent inset;
