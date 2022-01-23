@@ -1,6 +1,19 @@
 
 let mobileLenghPX = 620;
 
+
+
+function slowScroll (id) {
+	var offset = 0;
+	$('html, body').animate ({
+		scrollTop: $(id).offset ().top - offset
+	}, 100);
+	return false;
+}
+
+
+
+
 function changeErroDisplay(){
 
 
@@ -240,7 +253,7 @@ function changeErroDisplay(){
 	function countryCreate(){
 		let contry_name = ['Afghanistan', 	'Albania', 	'Algeria', 	'American Samoa', 	'Andorra', 	'Angola', 	'Anguilla', 	'Antigua and Barbuda', 	'Armenia', 	'Argentina', 	'Australia', 	'Austria', 	'Azerbaijan', 	'Bahamas', 	'Bahrain', 	'Bangladesh', 	'Barbados', 	'Belarus', 	'Belgium', 	'Belize', 	'Benin', 	'Bermuda', 	'Bolivia', 	'Bosnia and Herzegovina', 	'Botswana', 	'Brazil', 	'British Virgin Islands', 	'Brunei Darusalaam', 	'Bulgaria', 	'Burkina Faso', 	'Burundi', 	'Byelorussian', 	'Cambodia', 	'Cameroon', 	'Canada', 	'Cape Verde', 	'Cayman Islands', 	'Central African Republic', 	'Chad', 	'Chile', 	'China', 	'Christmas Island', 	'Cocos Islands', 	'Colombia', 	'Commonwealth of the Northern Mariana Islands', 	'Comoros and Mayotte Island', 	'Congo', 	'Cook Islands', 	'Costa Rica', 	'Croatia', 	'Cuba', 	'Cyprus', 	'Czech Republic', 	'Denmark', 	'Diego Garcia', 	'Djibouti', 	'Dominica', 	'Dominican Republic', 	'East Timor', 	'Ecuador', 	'Egypt', 	'El Salvador', 	'Equatorial Guinea', 	'Estonia', 	'Ethiopia', 	'Faeroe Islands', 	'Falkland Islands', 	'Fiji', 	'Finland', 	'France', 	'French Antilles', 	'French Guiana', 	'French Polynesia', 	'Gabon', 	'Gambia', 	'Georgia', 	'Germany', 	'Ghana', 	'Gibraltar', 	'Greece', 	'Greenland', 	'Grenada', 	'Guam', 	'Guatemala', 	'Guinea', 	'Guinea-Bissau', 	'Guyana', 	'Haiti', 	'Honduras', 	'Hong Kong', 	'Hungary', 	'Iceland', 	'India', 	'Indonesia', 	'Iran', 	'Iraq', 	'Irish Republic', 	'Israel', 	'Italy', 	'Ivory Coast', 	'Jamaica', 	'Japan', 	'Jordan', 	'Kazakhstan', 	'Kenya', 	'Kiribati Republic', 	'Kirg(h)izia', 	'Kuwait', 	'Laos', 	'Latvia', 	'Lebanon', 	'Lesotho', 	'Liberia', 	'Libya', 	'Liechtenstein', 	'Lithuania', 	'Luxembourg', 	'Macao', 	'Macedonia', 	'Madagascar', 	'Malawi', 	'Malaysia', 	'Maldives', 	'Mali', 	'Malta', 	'Marshall Islands', 	'Martinique', 	'Mauritania', 	'Mauritius', 	'Mexico', 	'Micronesia', 	'Monaco', 	'Mongolia', 	'Montserrat', 	'Morocco', 	'Mozambique', 	'Myanmar', 	'Namibia', 	'Nauru', 	'Nepal', 	'Netherlands', 	'Netherlands Antilles', 	'New Caledonia', 	'New Zealand', 	'Nicaragua', 	'Niger', 	'Nigeria', 	'Niue', 	'Norfolk Island', 	'North Korea', 	'North Yemen', 	'Northern Mariana Islands', 	'Norway', 	'Oman', 	'Pakistan', 	'Panama', 	'Papua New Guinea', 	'Paraguay', 	'Peru', 	'Philippines', 	'Poland', 	'Portugal', 	'Puerto Rico', 	'Qatar', 	'Republic of San Marino', 	'Reunion', 	'Romania', 	'Russia', 	'Rwandese Republic', 	'Saint Helena and Ascension Island', 	'Saint Pierre et Miquelon', 	'San Marino', 	'Sao Tome e Principe', 	'Saudi Arabia', 	'Senegal', 	'Seychelles', 	'Sierra Leone', 	'Singapore', 	'Slovakia', 	'Slovenia', 	'Solomon Islands', 	'Somalia', 	'South Africa', 	'South Korea', 	'South Yemen', 	'Spain', 	'Sri Lanka', 	'St.Kitts and Nevis', 	'St.Lucia', 	'St.Vincent and the Grenadines', 	'Sudan', 	'Suriname', 	'Svalbard and Jan Mayen Islands', 	'Swaziland', 	'Sweden', 	'Switzerland', 	'Syria', 	'Ta(d)jikistan', 	'Taiwan', 	'Tanzania', 	'Thailand', 	'Togolese Republic', 	'Tokelau', 	'Tonga', 	'Trinidad and Tobago', 	'Tunisia', 	'Turkey', 	'Turkmenistan', 	'Turks & Caicos Islands', 	'Tuvalu', 	'US Virgin Islands', 	'Uganda', 	'Ukraine', 	'United Arab Emirates', 	'United Kingdom', 	'Uruguay', 	'USA', 	'Uzbekistan', 	'Vanuatu', 	'Vatican City', 	'Venezuela', 	'Vietnam', 	'Wallis and Futuna Islands', 	'Western Sahara', 	'Western Samoa', 	'Yugoslavia', 	'Zaire', 	'Zambia', 	'Zimbabwe'];
 		let windWidth = window.innerWidth;
-	
+
 
 		if (windWidth < mobileLenghPX){
 			document.getElementById("Country_sel").size = 0;
@@ -302,17 +315,10 @@ function changeErroDisplay(){
 
 	}
 
-	function countrySelectClose(){
-		document.getElementById("Country_sel").style.display = 'none';
-		document.getElementById("country_open_icon").style.display = 'flex';
-		document.getElementById("country_close_icon").style.display = 'none';
-	}
 
 
 
 	function countrySelectInt(){
-		
-
 		
 
 		document.getElementById("Country_sel").style.display = 'none';
@@ -375,6 +381,9 @@ function changeErroDisplay(){
 
 
 	/*____________________________________________ placeholder move______________________*/
+
+
+
 
 
 	$(document).ready(function(){
@@ -479,14 +488,96 @@ function changeErroDisplay(){
 
 
 
-	function slowScroll (id) {
-		var offset = 0;
-		$('html, body').animate ({
-			scrollTop: $(id).offset ().top - offset
-		}, 100);
-		return false;
-	}
+
+
+
+	/*________________________  chsnge screen size chek /// for element select contry mobile setup___________________*/
+
+	var optimizedResize = (function() {
+
+		var callbacks = [],
+		running = false;
+
+    // fired on resize event
+    function resize() {
+
+    	if (!running) {
+    		running = true;
+
+    		if (window.requestAnimationFrame) {
+    			window.requestAnimationFrame(runCallbacks);
+    		} else {
+    			setTimeout(runCallbacks, 200);
+    		}
+    	}
+
+    }
+
+    // run the actual callbacks
+    function runCallbacks() {
+
+    	callbacks.forEach(function(callback) {
+    		callback();
+    	});
+
+    	running = false;
+    }
+
+    // adds callback to loop
+    function addCallback(callback) {
+
+    	if (callback) {
+    		callbacks.push(callback);
+    	}
+
+    }
+
+    return {
+        // public method to add additional callback
+        add: function(callback) {
+        	if (!callbacks.length) {
+        		window.addEventListener('resize', resize);
+        	}
+        	addCallback(callback);
+        }
+    }
+}());
 
 
 
 
+
+	optimizedResize.add(function() {
+		let windWidth = window.innerWidth;
+
+		if (windWidth < 620){
+			document.getElementById("Country_sel").size = 0;
+			document.getElementById("country_open_icon2").style.display = "flex";
+			document.getElementById("Country_sel").style.display = "flex";
+
+			document.getElementById("country_open_icon").style.display = "none";
+			document.getElementById("country_close_icon").style.display = "none";
+			document.getElementById("Country").style.display = "none";
+			document.getElementById("movesellector").style.marginTop = "8px";
+
+
+
+			
+
+		}
+		else{
+			document.getElementById("Country_sel").size = 8;
+			document.getElementById("movesellector").style.marginTop = "0px";
+
+
+			document.getElementById("country_open_icon").style.display = "flex";
+			document.getElementById("country_close_icon").style.display = "none";
+			document.getElementById("Country").style.display = "flex";
+
+
+			document.getElementById("country_open_icon2").style.display = "none";
+			document.getElementById("Country_sel").style.display = "none";
+			
+		}
+
+	});
