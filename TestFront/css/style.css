@@ -468,6 +468,7 @@ select{
 	height: 24px;
 	display: flex;
 	margin-left: 221px;
+	display: none;
 
 }
 
@@ -931,6 +932,10 @@ textarea:-webkit-autofill:focus{
 
 		.country_open_close{
 			display: none;
+		}
+
+		.country_open_icon2{
+			display: flex;
 		}
 
 		#Country{
