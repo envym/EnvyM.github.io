@@ -415,7 +415,7 @@ function changeErroDisplay(){
 			}
 		})
 		$("#Phone").on({
-			click: function() {
+			mouseenter: function() {
 				$("#placeholder_move_Phone").animate({ marginTop: "-21px"},{duration:300, queue: false});
 				$("#placeholder_move_Phone").animate({ fontSize: "11px"},{duration:300, queue: false});
 				$(this).animate({ marginTop: "8px"},{duration:300, queue: false});
