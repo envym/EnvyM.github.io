@@ -214,14 +214,21 @@ function changeErroDisplay(){
 	/*____________________________________________ First Country recall_____________________*/
 
 	function countrySelectCallFirst (){
-		
+		showDropdown($('#Country_sel')[0]);
 		document.getElementById("Country_sel").style.display = 'block';
 		document.getElementById("country_open_icon").style.display = 'none';
 		document.getElementById("country_close_icon").style.display = 'flex';
 		document.getElementById('Country').removeAttribute("onclick");
-		document.getElementById('trigger_form_field_Country').style.overflow = 'visible';
 
 	}
+
+
+	showDropdown = function (element) {
+    var event;
+    event = document.createEvent('MouseEvents');
+    event.initMouseEvent('mousedown', true, true, window);
+    element.dispatchEvent(event);
+	};
 
 
 	/*____________________________________________ Country recall_____________________*/
@@ -455,3 +462,6 @@ function slowScroll (id) {
     }, 100);
     return false;
   }
+
+
+
