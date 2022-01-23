@@ -223,6 +223,11 @@ function changeErroDisplay(){
 	}
 
 
+	$('.select_show').click(function({
+showDropdown($('.select')[0]);
+});
+
+
 	showDropdown = function (element) {
     var event;
     event = document.createEvent('MouseEvents');
