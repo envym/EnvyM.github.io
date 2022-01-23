@@ -462,6 +462,15 @@ select{
 
 }
 
+.country_open_icon2{
+	background: url("../img/icons/u_angle-right-b.svg") no-repeat center top;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	margin-left: 221px;
+
+}
+
 .country_close_icon{
 	background: url("../img/icons/u_angle-right-t.svg") no-repeat center top;
 	width: 24px;
@@ -473,7 +482,7 @@ select{
 
 
 .bg_form12_container{
-		width: 220px;
+	width: 220px;
 	height: 174px;
 	position: absolute;
 	margin-top: 257px;
@@ -505,7 +514,7 @@ select{
 }
 
 .bg_form13_conteiner{
-		width: 186px;
+	width: 186px;
 	height: 186px;
 	margin-top: 669px;
 	overflow: hidden;
@@ -520,14 +529,14 @@ select{
 	position: absolute;
 	margin-top: 0;
 	margin-right: -42px;
-   right: 0;
-   display: block;
-   background-size: cover;
+	right: 0;
+	display: block;
+	background-size: cover;
 }
 
 
 .bg_form22_conteiner{
-		width: 220px;
+	width: 220px;
 	height: 174px;
 	right: 0;
 	margin-top: 137px;
@@ -559,7 +568,7 @@ select{
 }
 
 .bg_form23_conteiner{
-			width: 186px;
+	width: 186px;
 	height: 200px;
 	overflow: hidden;
 	right: 0;
@@ -647,19 +656,24 @@ textarea:-webkit-autofill:focus{
 	}
 
 	.if_alredy{
-	font-family: Rubik;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 15px;
-	line-height: 18px;
-	color: #E0E0E0;
-	margin-top: 60px;
-	text-align: center;
-}
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 18px;
+		color: #E0E0E0;
+		margin-top: 60px;
+		text-align: center;
+	}
 
 
 }
 
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 620px) {
 
@@ -681,157 +695,246 @@ textarea:-webkit-autofill:focus{
 	}
 
 
-
-
 	.menu_logo{
 		width: 120px;
-height: 30px;
+		height: 30px;
 	}
 
 	.menu_text{
 		font-family: Rubik;
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 36px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 36px;
 	}
-.menu_btn{
-	width: 330px;
-}
+	.menu_btn{
+		width: 330px;
+	}
 
 
-.bg_form12_container{
-	width: 86px;
-height: 122px;
-	position: absolute;
-	margin-top: 17px;
-	overflow: hidden;
-	left: 0;
-}
+	.bg_form12_container{
+		width: 86px;
+		height: 122px;
+		position: absolute;
+		margin-top: 17px;
+		overflow: hidden;
+		left: 0;
+	}
 
-.bg_form12{
-	background: url("../img/bg-forms/section_2-svg_1.svg") no-repeat center top;
-	width: 86px;
-height: 122px;
-	position: absolute;
-	margin-left: -24px;
-	background-size: cover;	
-}
+	.bg_form12{
+		background: url("../img/bg-forms/section_2-svg_1.svg") no-repeat center top;
+		width: 86px;
+		height: 122px;
+		position: absolute;
+		margin-left: -24px;
+		background-size: cover;	
+	}
 
-.bg_form11_container{
+	.bg_form11_container{
 		width: 99px;
-  height: 78px;
-  position: absolute;
-  overflow: hidden;
-  	right: 0;
-  	margin-top: 180px;
+		height: 78px;
+		position: absolute;
+		overflow: hidden;
+		right: 0;
+		margin-top: 180px;
 
-}
+	}
 
-.bg_form11{
-	background: url("../img/bg-forms/section_1-svg_2.svg") no-repeat center top;
-	width: 99px;
-  height: 78px;
-	position: absolute;
-	margin-top: 0px;
-	right: 0;
-	margin-right: -32px;
-	background-size: cover;
+	.bg_form11{
+		background: url("../img/bg-forms/section_1-svg_2.svg") no-repeat center top;
+		width: 99px;
+		height: 78px;
+		position: absolute;
+		margin-top: 0px;
+		right: 0;
+		margin-right: -32px;
+		background-size: cover;
 
-}
+	}
 
-.bg_form13_conteiner{
-	width: 93px;
-height: 93px;
-	margin-top: 508px;
-	overflow: hidden;
-	left: 0;
-	position: absolute;
-}
+	.bg_form13_conteiner{
+		width: 93px;
+		height: 93px;
+		margin-top: 508px;
+		overflow: hidden;
+		left: 0;
+		position: absolute;
+	}
 
-.bg_form13{
-	background: url("../img/bg-forms/section_2-svg_3.svg") no-repeat center top;
-width: 93px;
-height: 93px;
-	position: absolute;
-	margin-top: 0;
-	margin-right: 15px;
-   right: 0;
-   display: block;
-   background-size: cover;
-}
+	.bg_form13{
+		background: url("../img/bg-forms/section_2-svg_3.svg") no-repeat center top;
+		width: 93px;
+		height: 93px;
+		position: absolute;
+		margin-top: 0;
+		margin-right: 15px;
+		right: 0;
+		display: block;
+		background-size: cover;
+	}
 
 
-.bg_form22_conteiner{
+	.bg_form22_conteiner{
 		width: 114px;
-height: 91px;
-	right: 0;
-	margin-top: 5px;
-	position: absolute;
-	overflow: hidden;
-}
+		height: 91px;
+		right: 0;
+		margin-top: 5px;
+		position: absolute;
+		overflow: hidden;
+	}
 
-.bg_form22{
-	background: url("../img/bg-forms/section_2-svg_2.svg") no-repeat center top;
-	width: 114px;
-height: 91px;
-	position: absolute;
-	right: 0;
-	margin-right: -32px;
-	background-size: cover;
-	
+	.bg_form22{
+		background: url("../img/bg-forms/section_2-svg_2.svg") no-repeat center top;
+		width: 114px;
+		height: 91px;
+		position: absolute;
+		right: 0;
+		margin-right: -32px;
+		background-size: cover;
+		
 
-}
+	}
 
-.bg_form21{
-	background: url("../img/bg-forms/section_2-svg_1.svg") no-repeat center top;
-	width: 60px;
-height: 84px;
-	position: absolute;
-	margin-left: -17px;
-	margin-top: 117px;
-	background-size: cover;
-	
-}
+	.bg_form21{
+		background: url("../img/bg-forms/section_2-svg_1.svg") no-repeat center top;
+		width: 60px;
+		height: 84px;
+		position: absolute;
+		margin-left: -17px;
+		margin-top: 117px;
+		background-size: cover;
+		
+	}
 
-.bg_form23_conteiner{
-	width: 107px;
-	height: 107px;
-	overflow: hidden;
-	right: 0;
-	margin-top: 1117px;
+	.bg_form23_conteiner{
+		width: 107px;
+		height: 107px;
+		overflow: hidden;
+		right: 0;
+		margin-top: 1117px;
 
-	margin-right: 0;
-	position: absolute;
-	
-}
+		margin-right: 0;
+		position: absolute;
+		
+	}
 
-.bg_form23{
-	background: url("../img/bg-forms/section_2-svg_3.svg") no-repeat center top;
-	width: 107px;
-height: 107px;
-	position: absolute;
-	margin-top: 24px;
-	margin-right: -28px;
+	.bg_form23{
+		background: url("../img/bg-forms/section_2-svg_3.svg") no-repeat center top;
+		width: 107px;
+		height: 107px;
+		position: absolute;
+		margin-top: 24px;
+		margin-right: -28px;
 
-	right: 0;
-	background-size: cover;
-	
-
-
-}
-
-.contact_form{
-	width: 350px;}
-
-.main_logo_text{
-	font-family: Rubik;
-font-style: normal;
-font-weight: 500;
-font-size: 19px;
-line-height: 23px;
-
-}
+		right: 0;
+		background-size: cover;
+		
 
 
-}
+	}
+
+	.contact_form{
+		width: 350px;}
+
+		.main_logo_text{
+			font-family: Rubik;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 19px;
+			line-height: 23px;
+
+		}
+
+
+
+		/*_________________________________________________Sellllecrorrrrr_________________*/
+
+
+
+		.Country_sel { 
+			margin-top: -56px;
+			margin-left: 37px;
+			position: absolute;
+			display: block; 
+			font-size: 16px; 
+			font-family: Rubik; 
+			font-weight: 600; 
+			color: #E0E0E0; 
+			line-height: 1.3; 
+			padding: .6em 1.4em .5em .8em; width: 100%; 
+			max-height: 50px;
+			max-width: 264px; 
+			box-sizing: border-box; 
+			border: transparent;
+			box-shadow: ; 
+			border-radius: .5em;
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			appearance: none;
+			background-color: transparent; 
+			background-image: none; 
+			background-repeat: no-repeat, repeat;
+			background-position: right .7em top 50%, 0 0;
+			background-size: 24px;
+			font-family: Rubik;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 19px;
+			line-height: 23px;
+			/* identical to box height */
+
+
+			color: #E0E0E0; 
+		} 
+		.Country_sel::-ms-expand { display: none; } 
+		.Country_sel:hover { border-color: transparent; } 
+		.Country_sel:focus { border-color: transparent; 
+			box-shadow: ;
+			box-shadow: ; 
+			color: #E0E0E0;
+			font-family: Rubik;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 19px;
+			line-height: 23px;
+			outline: none; 
+			max-width: 264px;
+		} 
+		.Country_sel option { 
+			margin-left: 23px;
+			font-family: Rubik;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 15px;
+			color: #5E5E5E;
+
+		} 
+
+		.Country_sel option:hover{
+			color: #212121;
+			margin-left: 32px;
+			outline: none:
+			border: none;
+		}
+
+
+		*[dir="rtl"] .Country_sel, :root:lang(ar) .Country_sel, :root:lang(iw) .Country_sel { 
+			background-color: red;
+			background-position: left .7em top 50%, 0 0; 
+			padding: .6em .8em .5em 1.4em; 
+
+		}
+
+		.country_open_icon{
+			display: none;
+		}
+
+		.country_open_close{
+			display: none;
+		}
+
+		#Country{
+			display: none;
+		}
+
+	}
