@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<html>
+	<head>
+		<style>
+		.hero {
+			height: 400px;
+		}
+		.header {
+			position: relative;
+			height: 100px;
+		}
+		.sticky-header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 100px;
+		}
+		.sticky-header[data-scroll="in"] {
+			position: fixed;
+		}
+	</style>
+</head>
+<body>
+	<div class="hero"></div>
+	<div class="header">
+		<div class="sticky-header">HEADER</div>
+	</div>
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	<script>
+		ScrollOut({
+			targets: ".sticky-header",
+			offset: 400
+		});
+	</script>
+</body>
+</html>
