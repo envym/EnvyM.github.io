@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Developers</title>
+	<link rel="shortcut icon" href="img/logoBrowser.png" type="image/shortcutIcon">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i" rel="stylesheet">
+
+
+</head>
+<body onload="menu_mobile_check()">
+
+	<div class="menu_mobile_block" id="menu_mobile_block" onclick="menuClose();">
+		<ul lass="menu_mobile" onclick="menuClose();">
+			<li class="menu_mobile_call">
+				<a href="javascript://0" onclick="slowScroll ('#services')" class="menu__link_mobile">Услуги</a>
+			</li>
+			<li class="menu_mobile_call">
+				<a href="javascript://0" onclick="slowScroll ('#examples')" class="menu__link_mobile">Портфолио</a>
+			</li>
+			<li class="menu_mobile_call">
+				<a href="javascript://0" onclick="slowScroll ('#slider')" class="menu__link_mobile">Этапы</a>
+			</li>
+			<li class="menu_mobile_call">
+				<a href="javascript://0" onclick="slowScroll ('#footer')"class="menu__link_mobile">Дизайнеры</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="haeder">
+
+
+		
+		<div class="wrapper">
+
+			<div class="header-wrap" >
+				<div class="logo"><a href="#"></a></div>
+				<nav class="navigation">
+
+					<a href="javascript://0" class="menu_list" id="menu_list" onclick="menuCall();"><img src="img/mobileMenu.png" alt=""></a>
+					<a  href="javascript://0" class="menu_close" id="menu_close" onclick="menuClose();"><img src="img/mobileMenu.png" alt=""></a>
+
+					<ul class="menu">
+						<li class="menu__item">
+							<a href="javascript://0" onclick="slowScroll ('#services')" class="menu__link">Услуги</a>
+						</li>
+						<li class="menu__item">
+							<a href="javascript://0" onclick="slowScroll ('#examples')" class="menu__link">Портфолио</a>
+						</li>
+						<li class="menu__item">
+							<a href="javascript://0" onclick="slowScroll ('#slider')" class="menu__link">Этапы</a>
+						</li>
+						<li class="menu__item">
+							<a href="javascript://0" onclick="slowScroll ('#footer')"class="menu__link">Дизайнеры</a>
+						</li>
+						<li class="menu__item">
+							<a href="javascript://0" onclick="slowScroll ('#contacts')" class="menu__link1">Заказать</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="baner">
+
+		<div class="baner_images_banerMainLeft1">
+		</div>
+		<div class="baner_images_banerMainLeft2">
+		</div>
+		<div class="baner_images_banerMainLeft3">
+		</div>
+		<div class="baner_images_banerMainLeft4">
+		</div>
+		<div class="baner_images_banerMainLeft5">
+		</div>
+
+		<div class="baner_wrapper">
+
+			<div class="baner_text">
+				<div class="baner_text_title">
+					<p>Разработка интернет-магазина
+					с нуля за неделю</p>
+				</div>
+
+				<div class="baner_text_main">
+					Дизайн интернет магазина, элементов микро UX, корзин, личного кабинета - от фирменного стиля 
+					до пользовательского интерфейса в сжатые сроки 
+					с командой Virtual Designers 
+
+				</div>
+
+				<a href="javascript://0" onclick="slowScroll ('#contacts')" class="baner_text_btn">
+					Заказать
+				</a>
+			</div>
+
+			<div class="baner_images">
+				<div class="baner_images_banerMain">
+				</div>
+			</div>
+		</div>
+
+		<div class="baner_images_banerMainBg">
+		</div>
+
+
+	</div>
+
+
+
+	<div class="services" id="services">
+
+
+		<div class="services_title">
+			<p>Что входит в услугу по созданию дизайна интернет-магазина?</p>
+		</div>
+
+		<div class="services_list">
+
+			<div class="services_list_item" >
+				<div class="services_list_item_closed">
+					<div class="services_list_item_icon" id="services_list_item_icon1">
+						<img src="img/servicesIcon.png" alt="">
+					</div>
+
+					<div class="services_list_item_iconOpen" id="services_list_item_iconOpen1">
+						<img src="img/servicesIconOpen.png" alt="">
+					</div>
+
+					<div class="services_list_item_text"  id="services_list_item_text1">
+						<p>Дизайн портала</p>
+					</div>
+					<a href="javascript://0" class="services_list_item_arrowC" id="services_list_item_arrowC1" onclick="services_list_item1();">
+					</a>
+					<a href="javascript://0" class="services_list_item_arrowO" id="services_list_item_arrowO1" onclick="services_list_item1close();">
+					</a>		
+				</div>
+				<div class="services_list_item_open" id="services_list_item_open1">
+					<div class="services_list_item_open_text">
+						Дизайн портала — это оформление контента, совокупность всех графических элементов на веб-странице. Основная задача дизайна — познакомить пользователя со страницей. Продуманный дизайн создает нужное впечатление о компании.
+					</div>
+					<div class="services_list_item_open_margin"></div>
+				</div>
+			</div>
+
+
+
+
+			<div class="services_list_item">
+				<div class="services_list_item_closed">
+					<div class="services_list_item_icon" id="services_list_item_icon2">
+						<img src="img/servicesIcon.png" alt="">
+					</div>
+					<div class="services_list_item_iconOpen" id="services_list_item_iconOpen2">
+						<img src="img/servicesIconOpen.png" alt="">
+					</div>
+
+					<div class="services_list_item_text" id="services_list_item_text2">
+						<p>Дизайн адаптивной мобильной версии</p>
+					</div>
+					<a href="javascript://0" class="services_list_item_arrowC" id="services_list_item_arrowC2" onclick="services_list_item2();">
+					</a>
+					<a href="javascript://0" class="services_list_item_arrowO" id="services_list_item_arrowO2" onclick="services_list_item2close();">
+					</a>		
+				</div>
+				<div class="services_list_item_open" id="services_list_item_open2">
+					<div class="services_list_item_open_text" >
+						Мобильная версия сайта удобна для пользователя, потому что сильно упрощена по сравнению с обычной версией. Мобильная версия дает наиболее приоритетную информацию, а также позволяет совершать заказ/покупку с минимумом действий. 
+						При адаптивной версии вся структура сайта автоматически подстраивается под различную ширину экрана. 
+						Для того, чтобы получить рабочий продукт не нужно писать все с нуля — достаточно лишь подправить CSS и HTML. 
+						Один URL избавляет нас от ненужных редиректов, и надобности пользователю запоминать адрес мобильной версии.
+
+					</div>
+					<div class="services_list_item_open_margin"></div>
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class="services_list_item">
+				<div class="services_list_item_closed">
+					<div class="services_list_item_icon" id="services_list_item_icon3">
+						<img src="img/servicesIcon.png" alt="">
+					</div>
+
+					<div class="services_list_item_iconOpen" id="services_list_item_iconOpen3">
+						<img src="img/servicesIconOpen.png" alt="">
+					</div>
+
+					<div class="services_list_item_text" id="services_list_item_text3">
+						<p>Дизайн десктопной версии</p>
+					</div>
+					<a href="javascript://0" class="services_list_item_arrowC" id="services_list_item_arrowC3" onclick="services_list_item3();">
+					</a>
+					<a href="javascript://0" class="services_list_item_arrowO" id="services_list_item_arrowO3" onclick="services_list_item3close();">
+					</a>		
+				</div>
+				<div class="services_list_item_open" id="services_list_item_open3">
+					<div class="services_list_item_open_text">
+						Десктопную версию сайта просматривают пользователи со стационарных компьютеров. Основная цель: посерфить, углубиться в детали, получить больше информации, сравнить, выбрать, прицениться.
+
+					</div>
+					<div class="services_list_item_open_margin"></div>
+				</div>
+			</div>
+
+
+
+
+
+			<div class="services_list_item">
+				<div class="services_list_item_closed">
+					<div class="services_list_item_icon" id="services_list_item_icon4">
+						<img src="img/servicesIcon.png" alt="">
+					</div>
+
+					<div class="services_list_item_iconOpen" id="services_list_item_iconOpen4">
+						<img src="img/servicesIconOpen.png" alt="">
+					</div>
+
+					<div class="services_list_item_text" id="services_list_item_text4">
+						<p>Пользовательский интерфейс</p>
+					</div>
+					<a href="javascript://0" class="services_list_item_arrowC" id="services_list_item_arrowC4" onclick="services_list_item4();">
+					</a>
+					<a href="javascript://0" class="services_list_item_arrowO" id="services_list_item_arrowO4" onclick="services_list_item4close();">
+					</a>		
+				</div>
+				<div class="services_list_item_open" id="services_list_item_open4">
+					<div class="services_list_item_open_text">
+						Цель дизайна пользовательского интерфейса - сделать взаимодействие максимально простым и эффективным, насколько это возможно, с точки зрения достижения целей пользователя. Хороший дизайн пользовательского интерфейса облегчает выполнение поставленной задачи, не привлекая к себе лишнего внимания. 
+
+					</div>
+					<div class="services_list_item_open_margin"></div>
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class="services_list_item">
+				<div class="services_list_item_closed">
+					<div class="services_list_item_icon" id="services_list_item_icon5">
+						<img src="img/servicesIcon.png" alt="">
+					</div>
+
+					<div class="services_list_item_iconOpen" id="services_list_item_iconOpen5">
+						<img src="img/servicesIconOpen.png" alt="">
+					</div>
+
+					<div class="services_list_item_text" id="services_list_item_text5">
+						<p>Микро UX</p>
+					</div>
+					<a href="javascript://0" class="services_list_item_arrowC" id="services_list_item_arrowC5" onclick="services_list_item5();">
+					</a>
+					<a href="javascript://0" class="services_list_item_arrowO" id="services_list_item_arrowO5" onclick="services_list_item5close();">
+					</a>		
+				</div>
+				<div class="services_list_item_open" id="services_list_item_open5">
+					<div class="services_list_item_open_text">
+						Микро-анимация может изменить восприятие продукта, пользовательское поведение и повысить конверсию. Небольшие, преимущественно функциональные анимации поддерживают пользователя: обеспечивают визуальную обратную связь и более понятно отражают происходящие изменения. Микро-анимации способны многое объяснить без слов.
+
+					</div>
+					<div class="services_list_item_open_margin"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="services_img">
+			<img src="img/servicesImg.png" alt="">
+		</div>
+
+	</div>
+
+
+	<div class="slider" id="slider">
+
+		<div class="slider_img1">
+			<img src="img/sliderBgImg1.png" alt="">
+		</div>
+
+		<div class="slider_img2">
+			<img src="img/sliderBgImg2.png" alt="">
+		</div>
+
+
+		<div class="slider_wraper">
+			<div class="slider_title">
+				<p>Этапы разработки интернет-магазина</p>
+			</div>
+
+			<div class="slidr_box">
+
+				<div class="slidr_box_normalize">
+					<div class="slidr_box_container">
+
+						<div class="slidr_box_container_text">
+							<div class="slidr_box_container_text_tile">
+								<p>1. Анализ</p>
+							</div>
+							<div class="slidr_box_container_text_text">
+								<p>Для того, чтобы онлайн-магазин приносил выгоду, перед его запуском необходимо провести анализ других предложений рынка, оценить конкурентов и найти наиболее удобное решение. </p>
+							</div>
+						</div>
+						<div class="slidr_box_container_img1">
+							<img src="img/sliderImg1.png" alt="">
+						</div>
+					</div>
+				</div>
+
+
+				<div class="slidr_box_normalize">
+					<div class="slidr_box_container">
+
+						<div class="slidr_box_container_text">
+							<div class="slidr_box_container_text_tile">
+								<p>2. Визуальное решение</p>
+							</div>
+							<div class="slidr_box_container_text_text">
+								<p>Разработка дизайна ключевых страниц магазина – главная, каталог, информационные разделы, раздел корзины, товаров. Для нас главное – передать настроение бренда, сделать удобный для пользователя сайт.</p>
+							</div>
+						</div>
+						<div class="slidr_box_container_img2">
+							<img src="img/sliderImg2.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="slidr_box_normalize">
+					<div class="slidr_box_container">
+
+						<div class="slidr_box_container_text">
+							<div class="slidr_box_container_text_tile">
+								<p>3. Техническая реализация</p>
+							</div>
+							<div class="slidr_box_container_text_text">
+								<p>После утверждения дизайн-макета наступает следующий этап – верстка. Это трудоемкий процесс: программисты должны все тщательно прописать, чтобы не допустить технических ошибок.</p>
+							</div>
+						</div>
+						<div class="slidr_box_container_img3">
+							<img src="img/sliderImg3.png" alt="">
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="slidr_box_normalize">
+					<div class="slidr_box_container">
+
+						<div class="slidr_box_container_text">
+							<div class="slidr_box_container_text_tile">
+								<p>4. Наполнение контентом </p>
+							</div>
+							<div class="slidr_box_container_text_text">
+								<p>Создание и публикация текстов, а также видео материала. Хороший контент и качественные фотографии привлекают больше посетителей и помогают клиенту лучше ознакомиться с ассортиментом. </p>
+							</div>
+						</div>
+						<div class="slidr_box_container_img4">
+							<img src="img/sliderImg4.png" alt="">
+						</div>
+					</div>
+				</div>
+
+
+				<div class="slidr_box_normalize">
+					<div class="slidr_box_container">
+
+						<div class="slidr_box_container_text">
+							<div class="slidr_box_container_text_tile">
+								<p>5. Тестирование</p>
+							</div>
+							<div class="slidr_box_container_text_text">
+								<p>Составление плана тестирования для определения ошибок. Проверка работы сайта и визуального восприятия для улучшения сайта. Также используются чек-листы для четкого определения ошибок и их устранения. </p>
+							</div>
+						</div>
+						<div class="slidr_box_container_img5">
+							<img src="img/sliderImg5.png" alt="">
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="slidr_box_arrow_container">
+				<a class="slidr_box_arrowL">
+					<img src="img/slidrArrowL.png" alt="">
+				</a>
+				<a class="slidr_box_arrowR">
+					<img src="img/slidrArrowR.png" alt="">
+				</a>
+			</div>
+			
+
+			
+		</div>
+
+	</div>
+
+
+	<div class="examples" id="examples">
+
+		<div class="examples_img1">
+			<img src="img/examplesBgImg1.png" alt="">
+		</div>
+		<div class="examples_img2">
+			<img src="img/examplesBgImg2.png" alt="">
+		</div>
+
+		<div class="examples_tilte">
+			<p>Примеры онлайн-магазинов</p>
+		</div>
+
+
+		<div class="sexamples_arrow_container">
+			<a class="examples_arrowL">
+				<img src="img/slidrArrowL.png" alt="">
+			</a>
+			<a class="examples_arrowR">
+				<img src="img/slidrArrowR.png" alt="">
+			</a>
+		</div>
+
+		<div class="examples_box">
+
+
+			<div class="slidr_box_normalize">
+
+				<div class="examples_box_conteiner">
+
+					<div class="examples_box_conteiner_item">
+
+						<div class="examples_box_conteiner_item_img" id="examples_box_conteiner_item_img1">
+							<img src="img/examplesImg1.png" alt="">
+						</div>
+
+
+						<div class="examples_box_conteiner_item_text" id="examples_box_conteiner_item_text1">
+							<div class="examples_box_conteiner_item_text_tile">
+								<p>Онлайн-магазин</p>
+							</div>
+							<div class="examples_box_conteiner_item_text_small">
+								для оптовых покупок
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="examples_box_conteiner_item">
+
+						<div class="examples_box_conteiner_item_img" id="examples_box_conteiner_item_img2">
+							<img src="img/examplesImg3.png" alt="">
+						</div>
+
+
+						<div class="examples_box_conteiner_item_text" id="examples_box_conteiner_item_text2">
+							<div class="examples_box_conteiner_item_text_tile">
+								Онлайн-магазин
+							</div>
+							<div class="examples_box_conteiner_item_text_small">
+								для парикмахеров
+							</div>
+						</div>
+
+					</div>
+
+
+
+					<div class="examples_box_conteiner_item">
+
+						<div class="examples_box_conteiner_item_img" id="examples_box_conteiner_item_img3">
+							<img src="img/examplesImg5.png" alt="">
+						</div>
+
+
+						<div class="examples_box_conteiner_item_text" id="examples_box_conteiner_item_text3">
+							<div class="examples_box_conteiner_item_text_tile">
+								Онлайн-магазин
+							</div>
+							<div class="examples_box_conteiner_item_text_small">
+								для кондитеров
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+			<div class="slidr_box_normalize">
+				<div class="examples_box_conteiner">
+
+					<div class="examples_box_conteiner_item">
+
+						<div class="examples_box_conteiner_item_img" id="examples_box_conteiner_item_img4" >
+							<img src="img/examplesImg2.png" alt="">
+						</div>
+
+
+						<div class="examples_box_conteiner_item_text" id="examples_box_conteiner_item_text4">
+							<div class="examples_box_conteiner_item_text_tile">
+								Онлайн-магазин
+							</div>
+							<div class="examples_box_conteiner_item_text_small">
+								для флористов
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="examples_box_conteiner_item">
+
+						<div class="examples_box_conteiner_item_img" id="examples_box_conteiner_item_img5">
+							<img src="img/examplesImg4.png" alt="">
+						</div>
+
+
+						<div class="examples_box_conteiner_item_text"  id="examples_box_conteiner_item_text5">
+							<div class="examples_box_conteiner_item_text_tile">
+								Онлайн-магазин
+							</div>
+							<div class="examples_box_conteiner_item_text_small">
+								для визажистов
+							</div>
+						</div>
+
+					</div>
+
+
+
+					<div class="examples_box_conteiner_item" >
+
+						<div class="examples_box_conteiner_item_img" id="examples_box_conteiner_item_img6">
+							<img src="img/examplesImg6.png" alt="">
+						</div>
+
+
+						<div class="examples_box_conteiner_item_text" id="examples_box_conteiner_item_text6">
+							<div class="examples_box_conteiner_item_text_tile">
+								Онлайн-магазин
+							</div>
+							<div class="examples_box_conteiner_item_text_small">
+								для художников
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			
+			
+
+
+
+
+
+		</div>
+
+
+	</div>
+
+
+	<div class="iformation">
+		<div class="iformation_img1">
+			<img src="img/iformationImg1.png" alt="">
+		</div>
+
+		<div class="iformation_wrapper">
+
+			<div class="iformation_text">
+				<div class="iformation_text_title">
+					Необходимо больше информации?
+				</div>
+
+				<div class="iformation_text_main">
+					Если Вы владелец онлайн-магазина или только начинаете свой путь в электронной коммерции и вам нужен уникальный дизайн онлайн магазина для стартапа, обратитесь к нашему веб дизайнеру. За выгодную цену и короткий период времени, он поможет  визуализировать ваш веб проект.
+
+				</div>
+
+				<a href="javascript://0" onclick="slowScroll ('#contacts')" class="iformation_text_btn">
+					Заказать
+				</a>
+			</div>
+
+			<div class="iformation_images">
+				<div class="iformation_images_banerMain">
+					
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+	<div class="contacts" id="contacts">
+
+		<div class="contacts_img1">
+			<img src="img/contactsImg1.png" alt="">
+		</div>
+
+		<div class="contacts_img2">
+			<img src="img/contactsImg2.png" alt="">
+		</div>
+
+
+		<div class="contacts_title">
+			<p>Обсудить проект</p>
+		</div>
+		<div class="contacts_text">
+			<p>Расскажите о своих бизнес-целях и мы поможем вам в их достижении</p>
+		</div>
+		<div class="contacts_item">
+			<input type="text" id="" class="form-control" placeholder="Имя">
+		</div>
+		<div class="contacts_item">
+			<input type="text" id="" class="form-control" placeholder="Telegram/Viber">
+		</div>
+		<div class="contacts_item">
+			<input type="text" id="" class="form-control" placeholder="Email">
+		</div>
+
+		<a href="javascript://0"  class="contacts_btn">
+			Заказать
+		</a>
+
+		<div class="contacts_img_mobile">
+			
+		</div>
+
+
+	</div>
+
+
+	<div class="footer" id="footer">
+
+		<div class="footer_main">
+			<div class="footer_main_1">	
+				<div class="footer_main_1_logo">
+					<img src="img/logoBot.png" alt="">
+				</div>
+
+				<div class="footer_main_1_links">	
+					<a href="javascript://0"><img src="img/icons/cn1.png" alt=""></a>
+					<a href="javascript://0"><img src="img/icons/cn2.png" alt=""></a>
+					<a href="javascript://0"><img src="img/icons/cn3.png" alt=""></a>
+					<a href="javascript://0"><img src="img/icons/cn4.png" alt=""></a>
+					<a href="javascript://0"><img src="img/icons/cn5.png" alt=""></a>
+				</div>
+
+			</div>
+
+			<div class="footer_main_2">	
+				<div class="footer_main_2_contact">	
+					<a href="javascript://0"> <img src="img/icons/cn4.png" alt=""></a>
+					<a href="tel: +79805585949">Валерия: +79805585949</a>
+				</div>
+				<div class="footer_main_2_contact">	
+					<a href="javascript://0"> <img src="img/icons/cn4.png" alt=""></a>
+					<a href="tel: +79805585949">Анна: +79805585949</a>
+				</div>
+				<div class="footer_main_2_contact">	
+					<a href="javascript://0"> <img src="img/icons/cn4.png" alt=""></a>
+					<a href="tel: +79805585949">Валерия: +79805585949</a>
+				</div>
+
+			</div>
+			<div class="footer_main_4">
+					<a href="javascript://0"><img src="img/icons2/cnn1.png" alt=""></a>
+					<a href="javascript://0"><img src="img/icons2/cnn2.png" alt=""></a>
+					<a href="javascript://0"><img src="img/icons2/cnn3.png" alt=""></a>
+					<a href="javascript://0"><img src="img/icons2/cnn4.png" alt="" style="width:30px; height: 30px;"></a>
+					<a href="javascript://0"><img src="img/icons2/cnn5.png" alt=""></a>
+			</div>
+
+			<a class="footer_main_3"  href="hr@dv-s.com">	
+				<p>hr@dv-s.com</p>
+			</a>
+
+		</div>
+		<div class="footer_bot">	
+			<p>Developers 2018-2021 © All rights reserved</p>
+		</div>	
+
+
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<script type="text/javascript" src="js/custom.js"></script>
+
+
+</body>
+</html>
