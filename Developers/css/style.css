@@ -1040,7 +1040,7 @@ h1, h2, h3, h4, h5 {
   z-index: 2;
 }
 
-input {
+.form-control {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1057,22 +1057,26 @@ input {
           box-sizing: border-box;
   border-radius: 10px;
   z-index: 2;
+  margin-top: 20px;
 }
 
 .contacts_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  margin-top: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-input:hover {
+.form-control:hover {
   padding-left: 12px;
   background: #FFFFFF;
   border: 3px solid #6EB1FB;
@@ -1081,7 +1085,7 @@ input:hover {
   border-radius: 10px;
 }
 
-input:active {
+.form-control:active {
   padding-left: 12px;
   background: #FFFFFF;
   border: 3px solid #6EB1FB;
@@ -1090,7 +1094,7 @@ input:active {
   border-radius: 10px;
 }
 
-input:focus {
+.form-control:focus {
   padding-left: 12px;
   background: #FFFFFF;
   border: 3px solid #6EB1FB;
@@ -1110,6 +1114,7 @@ input:focus {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border: none;
   width: 270px;
   height: 60px;
   background: #75E169;
@@ -2065,7 +2070,7 @@ input:focus {
     margin-bottom: 25px;
   }
 
-  input {
+  .form-control {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -2099,7 +2104,7 @@ input:focus {
     padding-right: 20px;
   }
 
-  input:hover {
+  .form-control:hover {
     padding-left: 12px;
     background: #FFFFFF;
     border: 3px solid #6EB1FB;
@@ -2108,7 +2113,7 @@ input:focus {
     border-radius: 10px;
   }
 
-  input:active {
+  .form-control:active {
     padding-left: 12px;
     background: #FFFFFF;
     border: 3px solid #6EB1FB;
@@ -2117,7 +2122,7 @@ input:focus {
     border-radius: 10px;
   }
 
-  input:focus {
+  .form-control:focus {
     padding-left: 12px;
     background: #FFFFFF;
     border: 3px solid #6EB1FB;
